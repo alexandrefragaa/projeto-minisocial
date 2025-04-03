@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cadastro {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 30px;
+    padding-left: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+}
+
+#formCadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    align-self: center;
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="password"] {
+    width: 100%; /* Faz os campos de entrada ocuparem toda a largura disponível */
+    padding: 8px; /* Adiciona preenchimento interno */
+    border: 1px solid #ccc; /* Borda leve nos campos */
+    border-radius: 4px; /* Bordas arredondadas nos campos */
+}
+
+footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #f0f0f0; /* Cor de fundo do rodapé */
+    border-top: 1px solid #ccc; /* Borda superior do rodapé */
+}
+
+.hidden {
+    display: none;
+}
+
+#section2 {
+    display: none;
+}
+#mensagemSucesso {
+    display: none;
+    color: green;
+}

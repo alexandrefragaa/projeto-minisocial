@@ -1,29 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre-se</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Inscrever-se na Heaven</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS -->
 </head>
 <body>
-    <div class="container">
-        <div class="form-container">
-            <form id="register-form">
-                <h2>Cadastro</h2>
-                <input type="text" id="register-username" placeholder="Nome de usuário" required>
-                <input type="email" id="register-email" placeholder="Email" required>
-                <input type="password" id="register-password" placeholder="Senha" required>
-                <button type="submit">Cadastrar</button>
-            </form>
-            <form id="login-form">
-                <h2>Login</h2>
-                <input type="text" id="login-username" placeholder="Nome de usuário" required>
-                <input type="password" id="login-password" placeholder="Senha" required>
-                <button type="submit">Entrar</button>
-            </form>
-        </div>
-    </div>
-    <script src="scripts.js"></script>
+    <main>
+        <div class="cadastro">
+            <h1>Crie uma conta na Heaven</h2>
+                <form id="formCadastro">
+                    <!-- Seção 1 -->
+                    <div id="section1">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" required>
+                        <br>
+            
+                        <label id="contactLabel" for="contact">Celular:</label>
+                        <input type="text" id="contact" placeholder="Digite seu número" required>
+                        <button type="button" id="toggleContact">Usar Email</button>
+                        <br>
+            
+                        <label for="dataNascimento">Data de Nascimento:</label>
+                        <input type="date" id="dataNascimento" required>
+                        <br>
+
+                        <button type="button" id="nextButton">Próximo</button>
+                    </div>
+            
+                    <!-- Seção 2 -->
+                    <div id="section2" class="hidden">
+                        <label for="usuario2">Nome de Usuário</label>
+                        <input type="text" id="usuario" required>
+                        <br>
+            
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" required>
+                        <br>
+            
+                        <button type="button" id="finalizarCadastro">Finalizar Cadastro</button>
+                        <br>
+                    </div>
+                </form>
+            
+                <div id="mensagemSucesso" class="hidden"></div>
+            
+                <script src="script.js"></script>
 </body>
 </html>
